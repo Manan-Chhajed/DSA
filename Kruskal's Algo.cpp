@@ -75,8 +75,8 @@ public:
 class Solution
 {
     // Auxillary space --> DSU 2 * O(M) + O(M)
-	public:
-	//Function to find sum of weights of edges of the Minimum Spanning Tree.
+    public:
+    //Function to find sum of weights of edges of the Minimum Spanning Tree.
     int spanningTree(int V, vector<vector<int>> adj[])
     {
         vector<pair<int, pair<int, int>>> edges;
