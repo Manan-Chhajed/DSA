@@ -8,7 +8,7 @@
         int sum = 0;
         
         pq.push({0, 0});
-        // E log E + E lgo E
+        // E log E + E log E
         while(!pq.empty())
         {
             // log E
