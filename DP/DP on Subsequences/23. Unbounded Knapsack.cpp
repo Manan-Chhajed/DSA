@@ -5,3 +5,5 @@
 // auxillary stack space = O(w)
 
 // Space optimization in tabulation possible if there is something like index and index - 
+
+// Space optimizing from 2 arrays to 1
