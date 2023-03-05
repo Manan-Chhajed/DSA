@@ -1,5 +1,11 @@
 /* Manan Chhajed */
 
+/* 
+    why use DSU?
+    - answers the question does a and b belong to same component in O(1) time
+    - alternate --> you can use DFS/BFS
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -9,11 +15,11 @@ using namespace std;
 
 // works for both 0 based as well as 1 based indexing
 // why? think...
-class disjointSet {
+class DisjointSet {
     vector<int> rank, parent, size;
 
 public:
-    disjointSet(int n) {
+    DisjointSet(int n) {
         rank.resize(n + 1, 0);
         parent.resize(n + 1);
         size.resize(n + 1);
@@ -31,7 +37,7 @@ public:
             return node;
         }
         // parent[node] = --> path compression
-        return parent[node] =  findUPar(parent[node]);
+        return parent[node] = findUPar(parent[node]);
     }
 
     void unionByRank(int u, int v)
@@ -92,7 +98,7 @@ int32_t main()
 {
     init_code();
 
-    disjointSet ds(7);
+    DisjointSet ds(7);
     ds.unionBySize(1, 2);
     ds.unionBySize(2, 3);
     ds.unionBySize(4, 5);
