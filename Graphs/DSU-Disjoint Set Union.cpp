@@ -11,7 +11,7 @@ using namespace std;
 
 #define fast_io() ios_base::sync_with_stdio(false);cin.tie(NULL);cout.tie(NULL)
 
-// time complecity of both unionByRank and unionBySize is O(4 alpha)
+// time complexity of both unionByRank and unionBySize is O(4 alpha)
 
 // works for both 0 based as well as 1 based indexing
 // why? think...
