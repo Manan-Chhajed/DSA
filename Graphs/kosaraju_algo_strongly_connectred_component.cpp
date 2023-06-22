@@ -6,8 +6,8 @@
     - Sort all edges according to finishing time
     - Reverse the graph
     - Do a DFS
-    
-  class Solution
+*/
+class Solution
 {
     private:
     void dfs(int u, vector<vector<int>>& adj, vector<int>& vis, stack<int>& st)
